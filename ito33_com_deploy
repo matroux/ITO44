@@ -1,0 +1,7 @@
+#!/bin/env bash
+
+if ! hugo ; then
+    exit 1
+fi
+cd public
+rsync --protect-args --delete --recursive  --links --info=progress2 --perms --chmod=g+w --chown=www-data:www-data . nefle:/var/www/new-site

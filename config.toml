@@ -1,0 +1,147 @@
+baseURL = '/'
+languageCode = 'en-us'
+title = 'ITO33'
+
+[menu]
+[[menu.main]]
+  identifier = 'about'
+  name = 'About ITO33'
+  url = '/management/'
+  weight = 1
+[[menu.main]]
+  identifier = 'solutions'
+  name = 'Solutions'
+  post = ""
+  pre = ""
+  url = '/Solutions/'
+  weight = 2
+[[menu.main]]
+  identifier = 'clients'
+  name = 'Our Clients'
+  post = ""
+  pre = ""
+  url = '/our-clients/'
+  weight = 3
+[[menu.main]]
+  identifier = 'publications'
+  name = 'Publications'
+  post = ""
+  pre = ""
+  url = '/Publications/'
+  weight = 4
+[[menu.main]]
+  identifier = 'contact'
+  name = 'Contact Us'
+  post = ""
+  pre = ""
+  url = '/contact-us/'
+  weight = 5
+
+[params]
+ 
+[[params.socail]]
+url = "/"
+icon = "fab fa-facebook-f"
+[[params.socail]]
+url = "/"
+icon = "fab fa-twitter"
+
+[[params.socail]]
+url = "/"
+icon = "fab fa-linkedin-in"
+
+[[params.socail]]
+url = "/"
+icon = "fab fa-google-plus-g"
+
+[[params.socail]]
+url = "/"
+icon = "fab fa-instagram"
+
+[[params.footerlink]]
+  identifier = 'Opscore'
+  name = 'Opscore'
+  post = ""
+  pre = ""
+  url = 'solutions/opscore/'
+  weight = 1
+[[params.footerlink]]
+  identifier = 'CoCo33'
+  name = 'CoCo33'
+  post = ""
+  pre = ""
+  url = 'solutions/cococ33/'
+  weight = 2
+[[params.footerlink]]
+  identifier = 'Volatility Management'
+  name = 'Volatility Management'
+  post = ""
+  pre = ""
+  url = 'solutions/volatilitymanagement/'
+  weight = 3
+
+  
+[[params.publicationslinks]]
+  identifier = 'Articles'
+  name = 'Articles'
+  post = ""
+  pre = ""
+  url = '/publications/#articles'
+  weight = 1
+[[params.publicationslinks]]
+  identifier = 'Videos'
+  name = 'Videos'
+  post = ""
+  pre = ""
+  url = '/publications/#video'
+  weight = 2
+
+  
+[[params.ito33]]
+  identifier = 'About ITO33'
+  name = 'About ITO33'
+  post = ""
+  pre = ""
+  url = '/management/'
+  weight = 1
+[[params.ito33]]
+  identifier = 'Management Team'
+  name = 'Management Team'
+  post = ""
+  pre = ""
+  url = '/management/'
+  weight = 2
+[[params.ito33]]
+  identifier = 'Careers'
+  name = 'Careers'
+  post = ""
+  pre = ""
+  url = '/career/'
+  weight = 3
+[[params.ito33]]
+  identifier = 'Our Clients'
+  name = 'Our Clients'
+  post = ""
+  pre = ""
+  url = '/our-clients/'
+  weight = 4
+  
+[[params.contact]]
+  identifier = ""
+  name = 'Contact'
+  post = ""
+  pre = ""
+  url = '/contact-us/'
+  weight = 5
+    
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  
+[minify.tdewolff.html]
+keepWhitespace = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
